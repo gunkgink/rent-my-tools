@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1500" viewBox="0 0 1920 1500">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#526277" stroke-width="1.5"/></marker></defs>
+<rect width="1920" height="1500" fill="#F3F6FA"/>
+<text x="60" y="70" font-family="Arial,sans-serif" font-size="42" font-weight="600" fill="#18263A">Rent My Tools / UI flow design</text>
+<text x="60" y="112" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526277">Project 2 / Designed journeys, decisions and screen intent / 16 November 2026</text>
+<text x="60" y="160" font-family="Arial,sans-serif" font-size="28" font-weight="600" fill="#18263A">Member journey</text>
+<g><rect x="60" y="200" width="280" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="78" y="232" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S03 / Register</text>
+<text x="78" y="263" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Name, email, telephone</text>
+<text x="78" y="288" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Role + password validation</text>
+</g>
+<g><rect x="410" y="200" width="280" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="428" y="232" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S02 / Log in</text>
+<text x="428" y="263" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Credentials to session</text>
+<text x="428" y="288" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Return to selected item</text>
+</g>
+<g><rect x="760" y="200" width="280" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="778" y="232" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S01 / Browse</text>
+<text x="778" y="263" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Search, category, rate, stock</text>
+<text x="778" y="288" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Guest browsing allowed</text>
+</g>
+<g><rect x="1110" y="200" width="280" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="1128" y="232" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S04 / Detail</text>
+<text x="1128" y="263" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Description + stock + rate</text>
+<text x="1128" y="288" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Member: request equipment</text>
+</g>
+<g><rect x="1460" y="200" width="370" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="1478" y="232" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S05 / Request form</text>
+<text x="1478" y="263" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Equipment, integer quantity, dates</text>
+<text x="1478" y="288" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Visible summary + estimate</text>
+</g>
+<path d="M340 260L410 260" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M690 260L760 260" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1040 260L1110 260" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1390 260L1460 260" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<g><rect x="1460" y="410" width="370" height="155" rx="10" fill="#FFF7D6" stroke="#738399"/>
+<text x="1478" y="442" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Validation decision</text>
+<text x="1478" y="473" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Quantity 1..min(3, current stock)</text>
+<text x="1478" y="498" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Start &gt;= today UTC; return &gt;= start</text>
+<text x="1478" y="523" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Return minus start &lt;= 7 days</text>
+</g>
+<path d="M1645 325L1645 410" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<g><rect x="1060" y="425" width="310" height="125" rx="10" fill="#FFF1F0" stroke="#738399"/>
+<text x="1078" y="457" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Explain and preserve input</text>
+<text x="1078" y="488" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Specific error + correction</text>
+<text x="1078" y="513" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">No reservation or payment</text>
+</g>
+<path d="M1460 480L1370 480" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="1423.0" y="470.0" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#18263A">Invalid</text>
+<path d="M1215 425V365H1645V325" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<g><rect x="1460" y="650" width="370" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="1478" y="682" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S07 / Saved request</text>
+<text x="1478" y="713" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Persisted record + confirmation</text>
+<text x="1478" y="738" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Stock remains unchanged</text>
+</g>
+<path d="M1645 565L1645 650" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="1653.0" y="597.5" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#18263A">Valid: send</text>
+<g><rect x="1030" y="650" width="320" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="1048" y="682" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S06 / My requests</text>
+<text x="1048" y="713" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Own records only</text>
+<text x="1048" y="738" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">View / edit / delete</text>
+</g>
+<path d="M1460 712L1350 712" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<g><rect x="600" y="650" width="320" height="125" rx="10" fill="white" stroke="#738399"/>
+<text x="618" y="682" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S08 / Edit request</text>
+<text x="618" y="713" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Change item / quantity / dates</text>
+<text x="618" y="738" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Reapply same validation rules</text>
+</g>
+<path d="M1030 712L920 712" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="983.0" y="702.0" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#18263A">Edit</text>
+<g><rect x="170" y="650" width="320" height="125" rx="10" fill="#FFF1F0" stroke="#738399"/>
+<text x="188" y="682" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Delete confirmation</text>
+<text x="188" y="713" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Keep: return to detail</text>
+<text x="188" y="738" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Confirm: delete + refresh</text>
+</g>
+<path d="M1030 795L490 795" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="768.0" y="785.0" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#18263A">Delete</text>
+<text x="60" y="845" font-family="Arial,sans-serif" font-size="26" font-weight="600" fill="#18263A">Permission and recovery branches</text>
+<g><rect x="60" y="880" width="560" height="130" rx="10" fill="white" stroke="#738399"/>
+<text x="78" y="912" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Guest selects request</text>
+<text x="78" y="943" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Log in with a safe same-origin return target.</text>
+<text x="78" y="968" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Expired session: preserve nonsecret draft, then log in.</text>
+</g>
+<g><rect x="680" y="880" width="560" height="130" rx="10" fill="white" stroke="#738399"/>
+<text x="698" y="912" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Unavailable or removed equipment</text>
+<text x="698" y="943" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Zero stock: detail remains; no new request.</text>
+<text x="698" y="968" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">History remains; edits require active equipment.</text>
+</g>
+<g><rect x="1300" y="880" width="530" height="130" rx="10" fill="white" stroke="#738399"/>
+<text x="1318" y="912" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Ownership and failure states</text>
+<text x="1318" y="943" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Wrong role / other member: forbidden.</text>
+<text x="1318" y="968" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Network error is not empty data; preserve input.</text>
+</g>
+<text x="60" y="1080" font-family="Arial,sans-serif" font-size="28" font-weight="600" fill="#18263A">Admin journey</text>
+<g><rect x="60" y="1120" width="290" height="140" rx="10" fill="white" stroke="#738399"/>
+<text x="78" y="1152" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S02 / Admin login</text>
+<text x="78" y="1183" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Verified admin role</text>
+<text x="78" y="1208" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">No member-create action</text>
+</g>
+<g><rect x="420" y="1120" width="360" height="140" rx="10" fill="white" stroke="#738399"/>
+<text x="438" y="1152" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S12 / All requests</text>
+<text x="438" y="1183" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Requester context + all-user records</text>
+<text x="438" y="1208" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">S07 view; S08 edit and save</text>
+<text x="438" y="1233" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Confirm delete and refresh</text>
+</g>
+<g><rect x="850" y="1120" width="360" height="140" rx="10" fill="white" stroke="#738399"/>
+<text x="868" y="1152" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">S10 / Manage equipment</text>
+<text x="868" y="1183" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Name, category, stock, daily rate</text>
+<text x="868" y="1208" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">S11 add / edit equipment</text>
+<text x="868" y="1233" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Public catalog reflects changes</text>
+</g>
+<g><rect x="1280" y="1120" width="550" height="140" rx="10" fill="#FFF7D6" stroke="#738399"/>
+<text x="1298" y="1152" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#18263A">Remove equipment decision</text>
+<text x="1298" y="1183" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Confirm soft removal: hidden from public catalog</text>
+<text x="1298" y="1208" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Existing request history remains readable</text>
+<text x="1298" y="1233" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">No invented approval or return-processing status</text>
+</g>
+<path d="M350 1180L420 1180" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M780 1180L850 1180" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1210 1180L1280 1180" stroke="#526277" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="60" y="1340" font-family="Arial,sans-serif" font-size="24" font-weight="600" fill="#18263A">Design intent</text>
+<text x="60" y="1380" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526277">Left-aligned equipment information, visible rates and quantity, one summary, responsive single-column forms.</text>
+<text x="60" y="1420" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526277">Editable flow and decision artifact. Not a collage of finished application screenshots.</text>
+</svg>

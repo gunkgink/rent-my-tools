@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100">
+<rect x="0" y="0" width="1440" height="1100" rx="0" fill="#FFFFFF" stroke="#CFD8E3"/>
+<rect x="0" y="0" width="1440" height="80" rx="0" fill="#FFFFFF" stroke="#CFD8E3"/>
+<rect x="80" y="22" width="32" height="34" rx="3" fill="#F2C94C" stroke="#F2C94C"/>
+<text x="126" y="47" font-family="Arial,sans-serif" font-size="23" font-weight="600" fill="#18263A">Rent My Tools</text>
+<text x="820" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Browse equipment</text>
+<text x="1025" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">My requests</text>
+<text x="1245" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Alex Student</text>
+<text x="80" y="158" font-family="Arial,sans-serif" font-size="44" font-weight="600" fill="#18263A">Mirrorless camera kit</text>
+<rect x="80" y="220" width="740" height="540" rx="8" fill="#F3F6FA" stroke="#CFD8E3"/>
+<rect x="240" y="375" width="420" height="240" rx="20" fill="#344E69" stroke="#344E69"/>
+<circle cx="450" cy="495" r="110" fill="#18263A"/><circle cx="450" cy="495" r="78" fill="#2446C8"/>
+<text x="80" y="810" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526277">Compact camera with a standard lens.</text>
+<rect x="870" y="220" width="490" height="540" rx="8" fill="#FFFFFF" stroke="#CFD8E3"/>
+<text x="902" y="270" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Camera</text>
+<text x="902" y="326" font-family="Arial,sans-serif" font-size="30" font-weight="600" fill="#18263A">THB 250 / item / day</text>
+<text x="902" y="375" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#166534">5 units available</text>
+<text x="902" y="450" font-family="Arial,sans-serif" font-size="25" font-weight="600" fill="#18263A">Make it part of your project.</text>
+<text x="902" y="495" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#18263A">Up to 3 units, for up to 7 days.</text>
+<rect x="902" y="540" width="425" height="52" rx="4" fill="#2446C8" stroke="#2446C8"/>
+<text x="922" y="573" font-family="Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF">Request equipment</text>
+<text x="902" y="660" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#526277">Requests do not reserve equipment.</text>
+<text x="902" y="694" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#526277">No payment is collected here.</text>
+<text x="80" y="1040" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Designed screen / editable layout / S04-Detail</text>
+</svg>

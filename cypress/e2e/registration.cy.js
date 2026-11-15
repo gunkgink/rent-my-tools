@@ -1,0 +1,31 @@
+describe('Official journey: registration validation and logout',()=>{
+ it('registers a member, logs in, views account and logs out',()=>{
+  const email=`new-member-${Date.now()}@example.test`;
+  const password='Disposable-test-2026!';
+  cy.visit('/register');
+  cy.get('input[name=name]').type('New Test Member');
+  cy.get('input[name=email]').type(email);
+  cy.get('input[name=tel]').type('+66 2000 0000');
+  cy.get('select[name=role]').select('member');
+  cy.get('input[name=password]').type(password,{log:false});
+  cy.get('input[name=confirm]').type('Mismatch-2026!',{log:false});
+  cy.contains('button','Create account').click();
+  cy.get('[role=alert]').should('contain','Passwords must match');
+  cy.get('input[name=confirm]').clear().type(password,{log:false});
+  cy.contains('button','Create account').click();
+  cy.location('pathname').should('eq','/login');
+  cy.contains('Account created. Log in to continue.');
+  cy.get('input[name=email]').type(email);
+  cy.get('input[name=password]').type(password,{log:false});
+  cy.contains('button','Log in').click();
+  cy.location('pathname').should('eq','/equipment');
+  cy.visit('/account');
+  cy.contains('dd','New Test Member');
+  cy.contains('dd',email);
+  cy.contains('button','Log out').click();
+  cy.location('pathname').should('eq','/');
+  cy.get('header').should('not.contain','Log out');
+  cy.visit('/requests');
+  cy.location('pathname').should('eq','/login');
+ });
+});
