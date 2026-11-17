@@ -2,7 +2,15 @@
 
 Course Project 2: Equipment Rental System.
 
-**Current status:** implemented local Next.js frontend with the supplied backend, disposable development MongoDB, member/admin flows, automated tests, and design/presentation sources. Native Figma and external deployment remain separate pending deliverables.
+**Current status:** deployed. The frontend and the supplied backend run on Vercel with a MongoDB Atlas database; member/admin flows, automated tests and design sources are in this repository.
+
+## Live links
+
+- Frontend (Vercel): https://rent-my-tools.vercel.app
+- Backend API (Vercel): https://rent-my-tools-backend.vercel.app (source: https://github.com/VicItw/rent-my-tools-backend, a fork of the course PJ02 backend with Vercel configuration)
+- UI design (Figma): https://www.figma.com/design/r9z2CY5w8PAghXRsUqAvG9/
+
+Team ตัวจริงเรื่องปิ้งย่าง: Methasith Wijitburaphat (gunkgink) and Inthawut Vongjitvuttikrai (VicItw).
 
 ## Run locally
 
