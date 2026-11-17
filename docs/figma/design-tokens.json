@@ -1,0 +1,36 @@
+{
+  "color": {
+    "surface": "#FFFFFF",
+    "canvas": "#F3F6FA",
+    "text": "#18263A",
+    "muted": "#526277",
+    "brand": "#2446C8",
+    "signal": "#F2C94C",
+    "danger": "#B42318"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    80
+  ],
+  "radius": {
+    "field": 4,
+    "image": 8,
+    "panel": 12
+  },
+  "type": {
+    "display": "Barlow Semi Condensed",
+    "body": "IBM Plex Sans",
+    "thai": "Noto Sans Thai"
+  },
+  "breakpoint": {
+    "small": 640,
+    "large": 1024
+  }
+}

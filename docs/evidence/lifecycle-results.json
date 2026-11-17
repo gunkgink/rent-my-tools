@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-15T19:20:16.749Z",
+  "environment": "local production Next build + real supplied API + disposable MongoDB",
+  "passed": 2,
+  "failed": 0,
+  "total": 2
+}

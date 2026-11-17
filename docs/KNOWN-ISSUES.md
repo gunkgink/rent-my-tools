@@ -1,0 +1,14 @@
+# Remaining work and limits
+
+- Native Figma file now has three pages, six editable screens and a frame-level member prototype; full error/auth/mobile frames, native component/variable systems and per-control interactions remain incomplete. The native .fig download was declined by browser permission; no alternate export route was attempted. See docs/figma/README.md.
+- Local presentation is editable Markdown plus an HTML slide view. The official rubric is now reconciled in document13; final roster, booked slot, native presentation attachment and seven-minute rehearsal remain pending.
+- No external deployment, push or submission has occurred. The running backend uses a disposable real MongoDB database; stopping it resets local data.
+- Full manual screen-reader, keyboard,320px/200%-zoom and usability-session coverage has not been completed. Homepage desktop/390px visual checks and automated regression evidence are recorded separately. Do not claim the entire proposed accessibility or usability checklist passed.
+- Current implementation uses original category illustrations because no licensed product photographs were supplied. Image upload is not part of the backend contract.
+- Home page focuses on category entry points rather than duplicating the catalog's first six items; mobile navigation wraps visibly rather than using a hidden menu. Admin lists are responsive working records rather than a large desktop table. These are implementation simplifications; core operations remain accessible from visible links.
+- Public search filters immediately while typing and writes the search query to URL on blur. Category/availability/sort update the URL immediately.
+- Backend100/IP/10min rate limit applies to shared frontend traffic. Link prefetch is disabled and identity calls are deduplicated within each server render; repeated test runs still need a fresh disposable backend window or time to reset. No deployed limit was weakened.
+- The pinned supplied backend's dependency audit reported11 findings (7 moderate,3 high,1 critical) during setup. Its source/dependency lock was retained for course compatibility; it has not been security-hardened for public production use. Frontend production dependency audit reported zero findings. Development-tool dependencies have separate audit findings; inspect npm audit before deployment rather than apply forced major upgrades blindly.
+- A service outage during identity resolution currently falls back to unauthenticated navigation; protected pages request login. Form data remains in the browser where possible, but there is no refresh-token service or mutation idempotency key in the supplied API.
+
+The implementation is a local course application, not a claim of a production-certified rental/payment service. Requirements and backend semantics remain in documents01/06. Use current evidence rather than the originally planned test checklist to assess coverage.

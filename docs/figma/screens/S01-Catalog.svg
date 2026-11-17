@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100">
+<rect x="0" y="0" width="1440" height="1100" rx="0" fill="#FFFFFF" stroke="#CFD8E3"/>
+<rect x="0" y="0" width="1440" height="80" rx="0" fill="#FFFFFF" stroke="#CFD8E3"/>
+<rect x="80" y="22" width="32" height="34" rx="3" fill="#F2C94C" stroke="#F2C94C"/>
+<text x="126" y="47" font-family="Arial,sans-serif" font-size="23" font-weight="600" fill="#18263A">Rent My Tools</text>
+<text x="820" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Browse equipment</text>
+<text x="1025" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">My requests</text>
+<text x="1245" y="47" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Alex Student</text>
+<text x="80" y="158" font-family="Arial,sans-serif" font-size="44" font-weight="600" fill="#18263A">Browse equipment</text>
+<text x="80" y="205" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526277">Good equipment. Short commitments. More possibilities.</text>
+<text x="80" y="260" font-family="Arial,sans-serif" font-size="16" font-weight="600" fill="#18263A">Search equipment</text>
+<rect x="80" y="274" width="900" height="52" rx="4" fill="#FFFFFF" stroke="#738399"/>
+<text x="96" y="307" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#526277">Try camera, projector, notebook...</text>
+<text x="1020" y="260" font-family="Arial,sans-serif" font-size="16" font-weight="600" fill="#18263A">Sort by</text>
+<rect x="1020" y="274" width="340" height="52" rx="4" fill="#FFFFFF" stroke="#738399"/>
+<text x="1036" y="307" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#526277">Name A-Z</text>
+<rect x="80" y="355" width="170" height="44" rx="8" fill="#18263A" stroke="#CFD8E3"/>
+<text x="96" y="383" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#FFFFFF">All equipment</text>
+<rect x="270" y="355" width="170" height="44" rx="8" fill="#FFFFFF" stroke="#CFD8E3"/>
+<text x="286" y="383" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Camera</text>
+<rect x="460" y="355" width="170" height="44" rx="8" fill="#FFFFFF" stroke="#CFD8E3"/>
+<text x="476" y="383" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Projector</text>
+<rect x="650" y="355" width="170" height="44" rx="8" fill="#FFFFFF" stroke="#CFD8E3"/>
+<text x="666" y="383" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Computer</text>
+<rect x="840" y="355" width="170" height="44" rx="8" fill="#FFFFFF" stroke="#CFD8E3"/>
+<text x="856" y="383" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#18263A">Sports</text>
+<text x="80" y="435" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">8 equipment items</text>
+<rect x="80" y="470" width="410" height="300" rx="8" fill="#F3F6FA" stroke="#CFD8E3"/>
+<rect x="170" y="550" width="230" height="140" rx="16" fill="#344E69" stroke="#344E69"/>
+<circle cx="285" cy="620" r="48" fill="#2446C8"/>
+<text x="80" y="810" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#526277">Camera</text>
+<text x="80" y="850" font-family="Arial,sans-serif" font-size="26" font-weight="600" fill="#18263A">Mirrorless camera kit</text>
+<text x="80" y="900" font-family="Arial,sans-serif" font-size="20" font-weight="600" fill="#18263A">THB 250 / item / day</text>
+<text x="80" y="935" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#166534">5 available</text>
+<rect x="515" y="470" width="410" height="300" rx="8" fill="#F3F6FA" stroke="#CFD8E3"/>
+<rect x="605" y="550" width="230" height="140" rx="16" fill="#344E69" stroke="#344E69"/>
+<circle cx="720" cy="620" r="48" fill="#2446C8"/>
+<text x="515" y="810" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#526277">Projector</text>
+<text x="515" y="850" font-family="Arial,sans-serif" font-size="26" font-weight="600" fill="#18263A">Portable projector</text>
+<text x="515" y="900" font-family="Arial,sans-serif" font-size="20" font-weight="600" fill="#18263A">THB 180 / item / day</text>
+<text x="515" y="935" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#166534">2 available</text>
+<rect x="950" y="470" width="410" height="300" rx="8" fill="#F3F6FA" stroke="#CFD8E3"/>
+<rect x="1040" y="550" width="230" height="140" rx="16" fill="#344E69" stroke="#344E69"/>
+<circle cx="1155" cy="620" r="48" fill="#2446C8"/>
+<text x="950" y="810" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#526277">Computer</text>
+<text x="950" y="850" font-family="Arial,sans-serif" font-size="26" font-weight="600" fill="#18263A">Workshop notebook</text>
+<text x="950" y="900" font-family="Arial,sans-serif" font-size="20" font-weight="600" fill="#18263A">THB 300 / item / day</text>
+<text x="950" y="935" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#166534">4 available</text>
+<text x="80" y="1040" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526277">Designed screen / editable layout / S01-Catalog</text>
+</svg>

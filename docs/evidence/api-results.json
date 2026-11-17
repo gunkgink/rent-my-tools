@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-15T19:16:33.436Z",
+  "environment": "unmodified supplied API + disposable real MongoDB",
+  "passedAssertions": 28,
+  "scenarios": [
+    "member ownership GET/PUT/DELETE",
+    "admin edit/delete",
+    "member-only creation",
+    "UTC date and 7-day boundary",
+    "quantity boundaries",
+    "same-day allowed",
+    "stock unchanged"
+  ],
+  "status": "passed"
+}
