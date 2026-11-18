@@ -51,7 +51,8 @@ export async function mutate(
     let body: Record<string, unknown> = {};
     if (operation !== "delete") {
       if (kind === "equipment") {
-        const { name, category, description, quantity, rentalRate } = values;
+        const { name, category, description, quantity, rentalRate, image } =
+          values;
         if (
           !String(name || "").trim() ||
           !String(category || "").trim() ||
@@ -65,7 +66,22 @@ export async function mutate(
           throw Error(
             "Enter a name, category, description, whole available quantity and nonnegative rate.",
           );
-        body = { name, category, description, quantity, rentalRate };
+        if (
+          image !== undefined &&
+          (typeof image !== "string" ||
+            (image !== "" &&
+              !/^data:image\/(png|jpeg|webp|gif);base64,/.test(image)) ||
+            image.length > 900000)
+        )
+          throw Error("Use a PNG, JPEG, WebP or GIF image under about 650 KB.");
+        body = {
+          name,
+          category,
+          description,
+          quantity,
+          rentalRate,
+          ...(typeof image === "string" ? { image } : {}),
+        };
       } else {
         if (operation === "create" && current.user.role !== "member")
           throw Error("Only members can create rental requests.");
