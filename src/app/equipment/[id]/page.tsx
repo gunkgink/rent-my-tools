@@ -27,7 +27,11 @@ export default async function Page({
       </Link>
       <div className="detail">
         <div>
-          <EquipmentArt category={item.category} name={item.name} />
+          <EquipmentArt
+            category={item.category}
+            name={item.name}
+            image={item.image}
+          />
           <h1>{item.name}</h1>
           <p className="lead">{item.description}</p>
         </div>
