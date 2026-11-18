@@ -14,6 +14,7 @@ export interface Equipment {
   quantity: number;
   rentalRate: number;
   isActive: boolean;
+  image?: string;
 }
 export interface Rental {
   _id: string;
