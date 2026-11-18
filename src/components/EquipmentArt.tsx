@@ -1,10 +1,26 @@
 export default function EquipmentArt({
   category,
   name,
+  image,
 }: {
   category: string;
   name?: string;
+  image?: string;
 }) {
+  if (image)
+    return (
+      <div
+        className="equipment-art photo"
+        style={{ overflow: "hidden", padding: 0 }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={image}
+          alt={name ? `Photo of ${name}` : `${category} photo`}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </div>
+    );
   const kind = /camera|photo/i.test(category)
     ? "camera"
     : /computer|notebook/i.test(category)
