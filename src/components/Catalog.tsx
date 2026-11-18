@@ -92,7 +92,11 @@ export default function Catalog({ items }: { items: Equipment[] }) {
         {filtered.map((e) => (
           <article className="tile" key={e._id}>
             <Link prefetch={false} href={"/equipment/" + e._id}>
-              <EquipmentArt category={e.category} name={e.name} />
+              <EquipmentArt
+                category={e.category}
+                name={e.name}
+                image={e.image}
+              />
               <p className="muted">{e.category}</p>
               <h2>{e.name}</h2>
             </Link>
