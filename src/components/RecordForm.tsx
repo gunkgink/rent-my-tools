@@ -1,11 +1,45 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "@/components/Link";
 import DraftProvider, { useDraft } from "./DraftProvider";
 import { mutate } from "@/actions";
 import { Equipment, Rental } from "@/lib/types";
 import { estimate, money, rentalError, todayUTC } from "@/lib/rules";
+// Shrinks an uploaded picture to at most 1000px and returns it as a JPEG data URL,
+// small enough to send with the equipment form.
+async function toPhoto(file: File): Promise<string> {
+  if (!file.type.startsWith("image/")) throw Error("Choose an image file.");
+  const url = URL.createObjectURL(file);
+  try {
+    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const i = new Image();
+      i.onload = () => resolve(i);
+      i.onerror = () => reject(Error("That image could not be read."));
+      i.src = url;
+    });
+    const scale = Math.min(1, 1000 / Math.max(img.width, img.height));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.max(1, Math.round(img.width * scale));
+    canvas.height = Math.max(1, Math.round(img.height * scale));
+    const ctx = canvas.getContext("2d");
+    if (!ctx) throw Error("This browser cannot process images.");
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    let quality = 0.82;
+    let data = canvas.toDataURL("image/jpeg", quality);
+    while (data.length > 650000 && quality > 0.4) {
+      quality -= 0.1;
+      data = canvas.toDataURL("image/jpeg", quality);
+    }
+    if (data.length > 900000)
+      throw Error("That image is too large. Try a smaller picture.");
+    return data;
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
 function Form({
   kind,
   items = [],
@@ -47,6 +81,9 @@ function Form({
     [end, setEnd] = useState(
       rental?.returnDate.slice(0, 10) || restored?.end || "",
     );
+  const [image, setImage] = useState(equipment?.image || ""),
+    [imageError, setImageError] = useState(""),
+    fileInput = useRef<HTMLInputElement>(null);
   const item = items.find((e) => e._id === itemId);
   const id = equipment?._id || rental?._id;
   const cancel =
@@ -75,6 +112,7 @@ function Form({
                   description: f.get("description"),
                   quantity: Number(f.get("quantity")),
                   rentalRate: Number(f.get("rentalRate")),
+                  image,
                 }
               : {
                   equipment: itemId,
@@ -152,6 +190,82 @@ function Form({
                 defaultValue={equipment?.rentalRate ?? 0}
               />
             </label>
+            <fieldset
+              style={{
+                border: 0,
+                padding: 0,
+                margin: 0,
+                display: "grid",
+                gap: 8,
+              }}
+            >
+              <legend style={{ fontWeight: 600, marginBottom: 8 }}>
+                Equipment photo (optional)
+              </legend>
+              {image ? (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={image}
+                    alt="Selected equipment photo"
+                    style={{
+                      width: "100%",
+                      maxWidth: 320,
+                      aspectRatio: "4 / 3",
+                      objectFit: "cover",
+                      borderRadius: 8,
+                      border: "1px solid var(--border)",
+                    }}
+                  />
+                </>
+              ) : (
+                <small>
+                  No photo yet. The category illustration is shown instead.
+                </small>
+              )}
+              <input
+                ref={fileInput}
+                type="file"
+                accept="image/png,image/jpeg,image/webp,image/gif"
+                hidden
+                onChange={async (e) => {
+                  const file = e.currentTarget.files?.[0];
+                  e.currentTarget.value = "";
+                  if (!file) return;
+                  setImageError("");
+                  try {
+                    setImage(await toPhoto(file));
+                  } catch (err) {
+                    setImageError(
+                      err instanceof Error ? err.message : "Upload failed.",
+                    );
+                  }
+                }}
+              />
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <button
+                  type="button"
+                  className="secondary small"
+                  onClick={() => fileInput.current?.click()}
+                >
+                  {image ? "Change image" : "Upload image"}
+                </button>
+                {image ? (
+                  <button
+                    type="button"
+                    className="secondary small"
+                    onClick={() => setImage("")}
+                  >
+                    Remove image
+                  </button>
+                ) : null}
+              </div>
+              {imageError ? (
+                <small role="alert" style={{ color: "var(--danger)" }}>
+                  {imageError}
+                </small>
+              ) : null}
+            </fieldset>
           </>
         ) : (
           <>
